@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import { connect } from "react-redux"
-import { login, logout } from "./actions"
-import { withRouter } from "react-router-dom"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { login, logout } from './actions'
+import { withRouter } from 'react-router-dom'
 
 import {
   Container,
@@ -16,7 +16,7 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupText
-} from "reactstrap"
+} from 'reactstrap'
 
 class Login extends Component {
   render() {

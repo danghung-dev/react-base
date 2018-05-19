@@ -1,11 +1,11 @@
-import React, { Component } from "react"
-import { Route, Switch } from "react-router-dom"
+import React, { Component } from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import styled from "styled-components"
-import "./App.css"
-import HomePage from "./containers/HomePage"
-import Login from "./containers/Login"
-import PrivateRoute from "./components/PrivateRoute"
+import styled from 'styled-components'
+import './App.css'
+import HomePage from './containers/HomePage'
+import Login from './containers/Login'
+import PrivateRoute from './components/PrivateRoute'
 
 function setMaxWidth() {
   return `

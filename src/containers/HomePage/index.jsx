@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { connect } from "react-redux"
-import { login, logout } from "./actions"
-import { withRouter } from "react-router-dom"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { login, logout } from './actions'
+import { withRouter } from 'react-router-dom'
 
 export class Home extends React.Component {
   constructor(props) {
@@ -20,10 +20,7 @@ export class Home extends React.Component {
             Logout
           </button>
         ) : (
-          <button
-            type="button"
-            onClick={() => this.props.onLogin("hung", "123")}
-          >
+          <button type="button" onClick={() => this.props.onLogin('hung', '123')}>
             Login
           </button>
         )}

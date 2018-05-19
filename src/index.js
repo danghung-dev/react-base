@@ -1,17 +1,17 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import { Provider } from "react-redux"
-import { BrowserRouter } from "react-router-dom"
-import { ThemeProvider } from "styled-components"
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-import Nav from "./components/NavBar"
+import Nav from './components/NavBar'
 
-import { OuterWrapper, Box, Margin, theme } from "./styles/theme"
-import { basename } from "./config/config"
+import { OuterWrapper, Box, Margin, theme } from './styles/theme'
+import { basename } from './config/config'
 // import Footer from './components/Footer'
-import store from "./store"
-import App from "./App"
+import store from './store'
+import App from './App'
 
 // import registerServiceWorker from './registerServiceWorker';
 
@@ -35,5 +35,5 @@ ReactDOM.render(
       </MuiThemeProvider>
     </ThemeProvider>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 )

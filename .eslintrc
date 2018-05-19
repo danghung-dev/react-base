@@ -6,6 +6,8 @@
     "jest": true
   },
   "rules": {
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "quotes": [1, "single", { "avoidEscape": true }],
+    "max-len": [1, { "code": 100 }]
   }
 }

@@ -6,7 +6,7 @@ export const returnErrorResponse = (errorMessage = '') => {
   }
 }
 
-export const returnSuccessResponse = (data) => {
+export const returnSuccessResponse = data => {
   return {
     success: true,
     message: '',

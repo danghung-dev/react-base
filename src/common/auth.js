@@ -1,4 +1,4 @@
-import { ACCESS_TOKEN } from "../api"
+import { ACCESS_TOKEN } from '../api'
 
 class Token {
   constructor() {
@@ -13,7 +13,7 @@ class Token {
   }
   getToken() {
     // return localStorage.getItem(ACCESS_TOKEN)
-    return " "
+    return ' '
   }
 }
 

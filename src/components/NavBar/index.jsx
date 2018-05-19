@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import FlatButton from "material-ui/FlatButton"
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import FlatButton from 'material-ui/FlatButton'
 
 const NavLeft = styled.nav`
   width: 85%;
@@ -50,32 +50,26 @@ const NavIcon = styled.div`
  * @param {navaItems,user,onLogoutClick} params
  */
 const navItems = [
-  { icon: "home", link: "/", color: "#a2a2a2", name: "home" },
-  { icon: "search", link: "/query", color: "#daa520", name: "query" },
-  { icon: "class", link: "/DD", color: "#a2a2a2", name: "dictionary" },
-  { icon: "face", link: "/identity", color: "#daa520", name: "profile" },
-  { icon: "content_copy", link: "/files", color: "#a2a2a2", name: "data" }
+  { icon: 'home', link: '/', color: '#a2a2a2', name: 'home' },
+  { icon: 'search', link: '/query', color: '#daa520', name: 'query' },
+  { icon: 'class', link: '/DD', color: '#a2a2a2', name: 'dictionary' },
+  { icon: 'face', link: '/identity', color: '#daa520', name: 'profile' },
+  { icon: 'content_copy', link: '/files', color: '#a2a2a2', name: 'data' }
 ]
 const NavBar = () => (
   <Header>
     <NavLeft>
       {navItems.map(
         item =>
-          item.link.startsWith("http") ? (
+          item.link.startsWith('http') ? (
             <a key={item.link} href={item.link}>
-              <FlatButton
-                label={item.name}
-                style={{ color: "inherit", verticalAlign: "middle" }}
-              >
+              <FlatButton label={item.name} style={{ color: 'inherit', verticalAlign: 'middle' }}>
                 <NavIcon className="material-icons">{item.icon}</NavIcon>
               </FlatButton>
             </a>
           ) : (
             <NavItem key={item.link} to={item.link}>
-              <FlatButton
-                label={item.name}
-                style={{ color: "inherit", verticalAlign: "middle" }}
-              >
+              <FlatButton label={item.name} style={{ color: 'inherit', verticalAlign: 'middle' }}>
                 <NavIcon className="material-icons">{item.icon}</NavIcon>
               </FlatButton>
             </NavItem>
